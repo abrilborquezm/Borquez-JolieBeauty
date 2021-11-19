@@ -1,15 +1,11 @@
 $color-primario: white;
 $color-secundario: thistle;
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-@import '_footer.scss';
-@import '_container.scss';
 
 body{
     background-color: $color-primario;
@@ -23,26 +19,13 @@ h1{
     color: $color-secundario;
 }
 
-/*secciones*/
-.secciones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    transform: (10px,20px);
-    
-    .imagenes{
-        width: 60vh;
-        margin-top: 80px;
-
-    }
-}
 /*productos destacados*/
 .productosDestacados{
     background-image: linear-gradient(white, thistle);
     color: black;
     font-family: 'Playfair Display', serif;
     text-align: center;
+    font-size: 40px;
     border-radius: 30px;
     margin-top: 70px;
 }
@@ -50,40 +33,31 @@ h1{
 /*Información Importante*/
 
 h2 {
-    margin-top: 20px;
+    margin-top: 30px;
     font-family: 'Playfair Display', serif;
     color: $color-secundario;
+    font-size: 30px;
     margin-left: 30px;
-    text-align: left;
+    text-align: center;
         p{
             margin-left: 50px;
             font-size: 20%;
         }
 }
 
+
 main{
     text-align: center;
+    font-size: 15px;
 }
 
-
-/*Dispositivos chicos*/
-@media (max-width: 320px) {
-    .secciones{
-        flex-direction: column;
-        justify-content: space-evenly;
-
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        }
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: $color-secundario;
     
-    }
-}
-
-@media(max-width: 768px){
-    .productosDestacados{
-        display: flex;
-        flex-direction: column;
+    .bordeRedondeado{
+        border-radius: 50px;
+        margin-top: 15px;
     }
 }

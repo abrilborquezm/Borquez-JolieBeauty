@@ -1,83 +1,10 @@
-@charset "UTF-8";
+
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-footer {
-  margin-top: 20px;
-  text-align: center;
-  background-color: thistle;
-}
-
-footer .bordeRedondeado {
-  border-radius: 50px;
-  margin-top: 15px;
-}
-
-.container {
-  display: -ms-grid;
-  display: grid;
-  margin-top: 50px;
-  text-align: center;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  gap: 15px;
-  grid-auto-flow: row;
-      grid-template-areas: "LecheHidraet AcidoHidraet TonicoHidraet" "CremaDada SerumRDada SerumHDada";
-}
-
-h3 {
-  font-size: 25px;
-  text-align: center;
-  margin-top: 20px;
-  font-family: 'Playfair Display', serif;
-}
-
-.LecheHidraet {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: LecheHidraet;
-  border: 2px solid thistle;
-}
-
-.AcidoHidraet {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: AcidoHidraet;
-  border: 2px solid thistle;
-}
-
-.TonicoHidraet {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: TonicoHidraet;
-  border: 2px solid thistle;
-}
-
-.CremaDada {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: CremaDada;
-  border: 2px solid thistle;
-}
-
-.SerumRDada {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: SerumRDada;
-  border: 2px solid thistle;
-}
-
-.SerumHDada {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: SerumHDada;
-  border: 2px solid thistle;
 }
 
 body {
@@ -92,7 +19,6 @@ h1 {
   color: thistle;
 }
 
-/*secciones*/
 .secciones {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,8 +32,8 @@ h1 {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-transform: 10px, 20px;
-          transform: 10px, 20px;
+  -webkit-transform: translate(10px, 20px);
+          transform: translate(10px, 20px);
 }
 
 .secciones .imagenes {
@@ -115,7 +41,6 @@ h1 {
   margin-top: 80px;
 }
 
-/*productos destacados*/
 .productosDestacados {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(thistle));
   background-image: linear-gradient(white, thistle);
@@ -126,23 +51,7 @@ h1 {
   margin-top: 70px;
 }
 
-/*Información Importante*/
-h2 {
-  margin-top: 20px;
-  font-family: 'Playfair Display', serif;
-  color: thistle;
-  margin-left: 30px;
-  text-align: left;
-}
 
-h2 p {
-  margin-left: 50px;
-  font-size: 20%;
-}
-
-main {
-  text-align: center;
-}
 
 /*Dispositivos chicos*/
 @media (max-width: 320px) {
@@ -155,26 +64,9 @@ main {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .secciones .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .productosDestacados {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .secciones .imagenes {
+    width: 40vh;
+    margin: 10px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
